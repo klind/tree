@@ -11,20 +11,11 @@ public class Main {
 
         tree.print(tree.getTop());
 
-
+        final int i = tree.treeHeight(tree.getTop());
+        System.out.println("tree height " + i);
 
     }
 
-    public static void print(Element<Integer> e){
-        System.out.println(e.getData());
-        if (e.getlElement() != null)
-            System.out.print("/");
-
-        if (e.getrElement()!=null)
-            System.out.print("\\");
-
-        System.out.println();
-    }
 
 
 }

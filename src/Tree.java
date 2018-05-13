@@ -51,4 +51,14 @@ public class Tree {
             print(focus.getrElement());
         }
     }
+
+    public int treeHeight(Element focus) {
+        if (focus == null) return 0;
+
+        final int i = treeHeight(focus.getrElement());
+        final int q = treeHeight(focus.getlElement());
+
+        return 1 + Math.max(i, q);
+
+    }
 }
