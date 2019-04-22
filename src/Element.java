@@ -19,19 +19,19 @@ public class Element<T> {
         this.data = data;
     }
 
-    public Element getrElement() {
+    public Element<T> getrElement() {
         return rElement;
     }
 
-    public void setrElement(Element rElement) {
+    public void setrElement(Element<T> rElement) {
         this.rElement = rElement;
     }
 
-    public Element getlElement() {
+    public Element<T> getlElement() {
         return lElement;
     }
 
-    public void setlElement(Element lElement) {
+    public void setlElement(Element<T> lElement) {
         this.lElement = lElement;
     }
 }

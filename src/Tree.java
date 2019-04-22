@@ -51,7 +51,21 @@ public class Tree {
             print(focus.getrElement());
         }
     }
-
+    
+    public Element<Integer> find(Element<Integer> e) {
+      return findr(e, getTop());
+    }
+    
+    private Element<Integer> findr(Element<Integer> elementToFind, Element<Integer> top) {
+      if(top == null) return null;
+      if(top.getData().equals(elementToFind.getData())) return top;
+      if(elementToFind.getData().compareTo(top.getData()) < 0)
+        return findr(elementToFind, top.getlElement());
+      else
+        return findr(elementToFind, top.getrElement());
+    }
+    
+    
     public int treeHeight(Element focus) {
         if (focus == null) return 0;
 

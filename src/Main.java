@@ -11,6 +11,8 @@ public class Main {
 
         tree.print(tree.getTop());
 
+        System.out.println("Found " + tree.find(new Element<Integer>(50)).getData());
+        
         final int i = tree.treeHeight(tree.getTop());
         System.out.println("tree height " + i);
 
